@@ -8,7 +8,8 @@ const Terminal = () => {
 
   useEffect(() => {
     const term = new XTerminal({
-      rows: 20,
+      rows: 15,
+      cols: 120,
       cursorBlink: true,
     });
 
@@ -35,9 +36,7 @@ const Terminal = () => {
     <div
       ref={terminalRef}
       style={{
-        width: "100%",
-        height: "400px",
-        backgroundColor: "black",
+        backgroundColor: "green",
       }}
     />
   );
