@@ -1,24 +1,26 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
+  "name": "neocode-be",
+  "version": "0.0.0",
+  "description": "this is the main backend ",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "build": "tsc ",
+    "build": "tsc",
     "start": "node ./dist/index.js",
-    "dev": "npm run build && npm run start"
+    "dev": " nodemon ./dist/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.958.0",
     "@types/express": "^5.0.6",
-    "chokidar": "^5.0.0",
-    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
     "express": "^5.2.1",
-    "node-pty": "^1.1.0",
-    "socket.io": "^4.8.3",
     "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2"
   }
 }
